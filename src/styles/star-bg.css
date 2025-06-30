@@ -1,0 +1,21 @@
+
+.star-background {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px);
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+  animation: moveStars 15s linear infinite;  /* faster now */
+  opacity: 0.4;
+  z-index: 0;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100px, -100px);
+  }
+}

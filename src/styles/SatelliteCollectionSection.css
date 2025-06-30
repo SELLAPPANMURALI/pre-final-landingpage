@@ -1,0 +1,83 @@
+
+
+
+.satellite-collection-section {
+  background: #232946;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #12172644;
+}
+
+.sat-card {
+  position: relative;
+  overflow: visible;
+  border-radius: 18px;
+  background: #232946;
+  box-shadow: 0 2px 14px 0 #12172622;
+  min-height: 320px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.24s, transform 0.24s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.24s, transform 0.24s, margin-bottom 0.5s cubic-bezier(.47,1.64,.41,.8);
+ 
+
+}
+
+.sat-img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  background: #181f2b;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 2px 14px #1117;
+}
+
+.sat-name {
+  z-index: 2;
+  background: transparent;
+  transition: color 0.2s;
+  color: #fff;
+  font-size: 1.08em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  margin-bottom: 0px; /* Reduced extra space under the name */
+  line-height: 1.25;
+}
+
+/* Responsive fixes */
+@media (max-width: 576px) {
+  .sat-card {
+    min-height: 380px;
+  }
+  .sat-img {
+    height: 120px;
+  }
+}
+
+/* Capabilities grid appears under card with delayed fade-in */
+.capabilities-expand {
+  animation: fadeInUp 0.70s cubic-bezier(.47,1.64,.41,.8);
+  animation-delay: 0.25s;  /* Delay before appearing */
+  animation-fill-mode: backwards;
+  background: #232946;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px 0 #12172622;
+  padding: 22px 15px 18px 15px;
+  margin-top: 5px;
+  z-index: 3;
+}
+
+/* Animation for capabilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,49 @@
+/* Full screen center alignment */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  margin-top: -60px;
+}
+
+/* Glassmorphism card */
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive input fields */
+.login-card input {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-card input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-card label {
+  font-weight: 500;
+}
+
+/* Register link styling */
+.register-link {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,9 @@
+.sticky-navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1080; /* Above most content and sidebars */
+  width: 100%;
+  background: rgba(0,0,0,0.9); /* Ensures opaque background */
+  backdrop-filter: blur(3px);
+  /* Remove margin or padding from parent containers above! */
+}

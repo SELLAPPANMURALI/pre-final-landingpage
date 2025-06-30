@@ -1,0 +1,177 @@
+
+
+/* Global Reset - This goes at the top */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: clip !important;
+}
+
+/* Body Fix - This removes Vite default centering */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: block;
+  place-items: unset;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #181f2b 0%, #232946 100%);
+  color: #fff;
+}
+
+/* Root - Cleaned */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Anchor tag styling */
+a {
+  font-weight: 500;
+  color: #38b6ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0bb3ff;
+}
+
+/* Headings */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Buttons - Bootstrap will handle most, but keeping for custom buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #38b6ff !important;
+  color: #fff !important;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #38b6ff;
+  background: #1a70b8 !important;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Responsive color scheme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #213547;
+  }
+}
+
+/* -------------- THEME UPGRADE BELOW THIS LINE -------------- */
+
+/* Section backgrounds */
+section,
+.hero-section,
+.capabilities-section,
+.dashboard-section,
+.achievements-section {
+  background: transparent;
+  color: #fff;
+}
+
+.capabilities-section,
+.achievements-section,
+.dashboard-section {
+  background: #232946;
+  border-radius: 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 16px #12172644;
+}
+
+/* Capability Cards */
+.capability-card {
+  background: #232946;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px 0 #12172622;
+  padding: 24px 18px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.capability-card .cap-icon {
+  color: #38b6ff;
+}
+.capability-card:hover {
+  box-shadow: 0 8px 32px 0 #38b6ff44;
+  transform: translateY(-10px);
+}
+
+/* Achievements Numbers */
+.achievements-section h1 {
+  color: #38b6ff !important;
+}
+
+/* Navbar */
+.navbar {
+  background: #181f2b !important;
+  color: #fff;
+  box-shadow: 0 2px 8px #12172633;
+}
+.navbar .nav-link.active,
+.navbar .nav-link.dashboard-link {
+  color: #38b6ff !important;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background: #181f2b;
+  color: #b3bed7;
+}
+.footer a {
+  color: #38b6ff;
+}
+
+/* Buttons, including Bootstrap & custom */
+.btn,
+button {
+  background: #38b6ff !important;
+  color: #fff !important;
+  border-radius: 8px;
+  border: none;
+}
+.btn-outline-primary {
+  background: transparent !important;
+  color: #38b6ff !important;
+  border: 2px solid #38b6ff !important;
+}
+.btn-outline-primary:hover {
+  background: #38b6ff !important;
+  color: #fff !important;
+}
+
+/* Dashboard link in navbar (legacy) */
+.navbar .nav-link.dashboard-link {
+  color: #38b6ff !important;
+  font-weight: bold;
+}
